@@ -426,3 +426,100 @@ font-size: 18px;
     font-size: 16px;
     }
 }
+/* contact */
+
+.contact-wrapper {
+    padding: 29px 18px;
+border-radius: 48px;
+    width: 361px;
+    height: 362px;
+box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, #42a5f5 0%, #3fa2f4 9.09%, #3ca0f2 18.18%, #399df1 27.27%, #369aef 36.36%, #3398ee 45.45%, #3095ec 54.55%, #2c93eb 63.64%, #2990e9 72.73%, #258de8 81.82%, #228be6 90.91%, #1e88e5 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-img {
+    width: 64px;
+    height: 64px;
+}
+
+.contact-title {
+font-family: "Sora", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 22px;
+}
+
+.contact-text {
+    width: 328px;
+text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-link {
+    margin-top: 20px;
+border-radius: 33554400px;
+    width: 250px;
+    height: 48px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-link p {
+font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.75;
+    text-align: center;
+    color: #42a5f5;
+}
+
+@media only screen and (min-width: 1440px) {
+    .contact-section{
+        background: #abe0f6;
+        margin-top: -1px;
+
+    }
+    .contact-container {
+        padding: 100px 272px;
+    }
+
+    .contact-wrapper {
+        padding: 65px 112px;
+        width: 896px;
+        height: 530px;
+    }
+
+    .contact-img {
+width: 96px;
+    height: 96px;
+    }
+
+    .contact-title {
+font-size: 56px;
+    line-height: 0.85714;
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+
+    .contact-text {
+        width: 672px;
+    }
+
+    .contact-link {
+width: 250px;
+    height: 68px;
+    margin-top: 40px;
+    }
+
+    .contact-link p {
+font-size: 18px;
+    }
+}
