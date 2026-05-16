@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
       <meta charset="UTF-8" />
-      <link rel="icon" type="image/png" href="/favicon.png" />
+      <link rel="icon" type="image/png" href="/outerbay/favicon.png" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
@@ -23,10 +23,60 @@
     <script type="module" crossorigin src="/outerbay/index.js"></script>
     <link rel="modulepreload" crossorigin href="/outerbay/assets/vendor-B25oHZNK.js">
     <link rel="stylesheet" crossorigin href="/outerbay/assets/vendor-BHcSP5WY.css">
-    <link rel="stylesheet" crossorigin href="/outerbay/assets/styles-CzyvkBzo.css">
+    <link rel="stylesheet" crossorigin href="/outerbay/assets/styles-D_ML8o0V.css">
   </head>
   <body>
-    
+    <header class="header" id="site-header">
+    <div class="header-container container">
+        <a class="header-logo" href="./#home">
+            <img class="logo-img" src="/outerbay/assets/logo-B6EnQfnk.png" alt="logo" loading="lazy" />
+        </a>
+        <button type="button" class="menu-button" aria-label="menu toggle">
+            <span class="icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4 5H20M4 12H20M4 19H20" stroke="#171717" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" />
+</svg>
+            </span>
+        </button>
+
+        <nav class="nav ">
+            <ul class="navigation-list">
+                <li class="navigation-item">
+                    <a class="links" href="./#home">Challenge</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="links" href="./#move">Mechanics</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="links" href="./#every">Puzzle Layers</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="links" href="./#when">Tools</a>
+                </li>
+                <li class="navigation-item">
+                    <a class="links" href="./#faq">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- Mobile menu -->
+<div id="modalWindow" class="modal">
+    <ul class="menu-list">
+        <li class="menu-item"><a class="menu-list-item" href="./#home">Challenge</a></li>
+        <li class="menu-item"><a class="menu-list-item" href="./#move">Mechanics</a></li>
+        <li class="menu-item">
+            <a class="menu-list-item" href="./#every">Puzzle Layers</a>
+        </li>
+        <li class="menu-item">
+            <a class="menu-list-item" href="./#when">Tools</a>
+        </li>
+        <li class="menu-item">
+            <a class="menu-list-item" href="./#faq">FAQ</a>
+        </li>
+    </ul>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
