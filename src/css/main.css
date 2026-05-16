@@ -72,3 +72,65 @@ font-size: 20px;
     line-height: 1.4;
 }    
 }
+/* Move with purpose. */
+.move-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.move-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.move-text{
+    width: 340px;
+}
+.move-text-one{
+border: 2px solid rgba(66, 165, 245, 0.3);
+    border-radius: 16px;
+    width: 342px;
+    height: 81px;
+    padding: 21px 25px;
+background: linear-gradient(90deg, rgba(66, 165, 245, 0.1) 0%, rgba(92, 107, 192, 0.1) 100%);
+    font-weight: 700;
+    font-size: 16px;
+    color: #101828;
+}
+.move-text-two{
+border: 2px solid rgba(76, 175, 80, 0.3);
+    border-radius: 16px;
+    width: 342px;
+    height: 108px;
+    background: linear-gradient(90deg, rgba(102, 187, 106, 0.1) 0%, rgba(76, 175, 80, 0.1) 100%);
+    padding: 25px;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 16px;
+    color: #4caf50;
+}
+@media only screen and (min-width: 1440px) {
+.move-container{
+    flex-direction: row-reverse;
+    gap: 87px;
+    justify-content: center;
+}
+.move-text-wrapper{
+width: 608px;
+    gap: 20px;
+}
+.move-text{
+width: 592px;
+}
+.move-text-one{
+width: 608px;
+    height: 108px;
+    font-size: 20px;
+}
+.move-text-two{
+width: 608px;
+    height: 108px;
+font-size: 18px;
+}    
+}
