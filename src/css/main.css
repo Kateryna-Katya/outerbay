@@ -300,4 +300,129 @@ font-size: 24px;
  .when-text-wrapper{
     width: 850px;
  }
+ .when-container{
+    padding-bottom: 100px;
+ }
+}
+/* FAQ */
+.faq-acc {
+    display: flex;
+    flex-direction: column;
+    width: 341px;
+    margin: 0 auto;
+    gap: 12px;
+
+}
+
+.faq-acc-el {
+    position: relative;
+    transition: margin-bottom 0.3s ease;
+border: 2px solid #f3f4f6;
+    border-radius: 16px;
+    width: 341px;
+box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.1), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 26px 20px;
+}
+
+.faq-acc-el-title {
+    margin-bottom: 0;
+}
+
+.faq-acc-el-trigger {
+    border: none;
+    background: inherit;
+    width: 100%;
+font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    padding: 0;
+    margin-bottom: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.faq-acc-arr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    transition: transform 0.3s ease;
+    border: none;
+    background-color: inherit;
+
+}
+
+.faq-acc-arr.is-hidden {
+    display: none;
+}
+
+.faq-acc-el.open .faq-acc-arr {
+    transform: rotate(180deg);
+}
+
+.faq-acc-el-descr-frame {
+    background: inherit;
+    width: 300px;
+font-size: 12px;
+    text-align: left;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease, border-bottom 0.3s ease;
+}
+
+.faq-acc-el.js-enabled .faq-acc-el-descr-frame {
+    visibility: hidden;
+}
+
+
+.faq-acc-el.open .faq-acc-el-descr-frame {
+    visibility: visible;
+    opacity: 1;
+    border: none;
+font-size: 12px;
+    background: none;
+    padding-top: 16px;
+    width: 300px;
+    max-height: 500px;
+}
+
+@media only screen and (min-width: 1440px) {
+    .faq-section{
+background: #abe0f6;
+    }
+.faq-container{
+    padding-bottom: 90px;
+}
+    .faq-acc {
+        width: 896px;
+        margin: 0 auto;
+        gap: 16px;
+    }
+
+    .faq-acc-el {
+    width: 896px;
+    }
+
+    .faq-acc-el-trigger {
+font-size: 18px;
+    }
+
+    .faq-acc-el-descr-frame {
+        width: 816px;
+        font-size: 16px;
+    }
+
+    .faq-acc-el.open .faq-acc-el-descr-frame {
+        width: 816px;
+    font-size: 16px;
+    }
 }
