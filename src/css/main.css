@@ -285,3 +285,19 @@ font-size: 24px;
     line-height: 1.33333;
   }
 }
+/* When puzzles fight back. */
+.when-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+@media only screen and (min-width: 1440px) {
+ .when-text-wrapper{
+    width: 850px;
+ }
+}
